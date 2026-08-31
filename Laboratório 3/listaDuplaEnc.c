@@ -197,7 +197,9 @@ void inverter(ListaDuplaEnc *l) {
     final = l->fim;
 
     while (inicial !=  NULL){
-        // Troca os ponteiros para os quais cada nodo está apontando.
+        // Inverte os ponteiros para os quais cada nodo aponta.
+
+        // NULL <- O <=> O <=> O <=> O <=> O <=> O-> NULL
         auxiliar = inicial->ant;                
         inicial->ant = inicial->prox;
         inicial->prox = auxiliar;
@@ -217,4 +219,3 @@ void inverter(ListaDuplaEnc *l) {
 
 
     }
-
